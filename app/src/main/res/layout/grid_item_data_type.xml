@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    android:id="@+id/grid_item">
+    <ImageView
+        app:layout_widthPercent="100%"
+        app:layout_aspectRatio="134%"
+        android:id="@+id/imageViewBg"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/tile_margin"
+        android:paddingRight="@dimen/tile_margin"
+        android:layout_height="wrap_content"
+        android:text="@string/type_name_ph"
+        android:id="@+id/tvTypeNameGrid"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+
+</android.support.percent.PercentRelativeLayout>

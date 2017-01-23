@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.richiksc.javadatatypes.DTGrid">
+
+    <com.richiksc.javadatatypes.AutofitRecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/grid_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/tile_margin"
+        android:columnWidth="160dp"
+        android:clipToPadding="false"/>
+
+</FrameLayout>

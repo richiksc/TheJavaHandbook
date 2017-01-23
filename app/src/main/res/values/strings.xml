@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">The Java Handbook</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share definition</string>
+    <string name="send_to">Share definition to</string>
+
+    <string name="type_declare">Type declaration: %1$s</string>
+
+    <string name="title_int">Integer</string>
+    <string name="declare_int">int</string>
+    <string name="def_int">A primitive type that stores a signed 32-bit integer.</string>
+    <string name="value_range_int">This data type can hold a value from &#8722;2^31 to 2^31 &#8722; 1.</string>
+
+    <string name="title_bool">Boolean</string>
+    <string name="declare_bool">boolean</string>
+    <string name="def_bool">This is a primitive type that can hold a binary on/off value.
+        You can use it to store the outcome of boolean expressions.</string>
+    <string name="value_range_bool">A boolean value can be `true` or `false`.</string>
+
+    <string name="title_string">String</string>
+    <string name="declare_string">java.lang.String</string>
+
+    <string name="title_double">Double (decimal value)</string>
+    <string name="declare_double">double</string>
+
+    <string name="title_default">Nothing</string>
+    <string name="def_default">Still nothing here.</string>
+    <string name="value_range_default">See, I told you there\'s absolutely nothing.</string>
+    <string name="read_more">Read more</string>
+    <string name="oracle_url">docs.oracle.com</string>
+
+    <string name="drawer_open">Open navigation</string>
+    <string name="drawer_close">Close navigation</string>
+
+    <string name="coming_soon">Coming soon!</string>
+    <string name="app_name_short">Java Handbook</string>
+
+    <string-array name="sections">
+        <item>Object-oriented fundamentals</item>
+        <item>Syntax</item>
+        <item>Data types</item>
+        <item>Documentation</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_name_ph">Data type</string>
+</resources>

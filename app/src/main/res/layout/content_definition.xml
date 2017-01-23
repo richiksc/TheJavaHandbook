@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.richiksc.javadatatypes.DefinitionActivity"
+    tools:showIn="@layout/activity_definition">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="56dp"
+        android:paddingTop="16dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Declaration"
+            android:id="@+id/text_declare"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="Definition lorem ipsum"
+            android:id="@+id/text_def"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="Value range lorem ipsum"
+            android:id="@+id/text_val_range"/>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
