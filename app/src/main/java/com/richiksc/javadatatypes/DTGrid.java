@@ -59,7 +59,7 @@ public class DTGrid extends Fragment {
             new DataType(DefType.STRING, R.string.title_string,
                 R.string.declare_string, R.drawable.avatar_string, getContext()),
             new DataType(DefType.DOUBLE, R.string.title_double,
-                R.string.declare_double, R.drawable.avatar_double, getContext())
+                R.string.declare_double, R.drawable.avatar_double, R.drawable.double_square ,getContext())
         };
 
     // Inflate the layout for this fragment

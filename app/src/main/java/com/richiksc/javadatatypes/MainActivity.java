@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements DTGrid
   private RecyclerView.Adapter mAdapter;
   private RecyclerView.LayoutManager mLayoutManager;
   private Drawer mDrawer;
+  private MenuItem swapView;
+  private int currentView = 0;
+  private DTGrid gridFragment;
 
 
   protected void onCreate(Bundle savedInstanceState) {
@@ -102,16 +105,40 @@ public class MainActivity extends AppCompatActivity implements DTGrid
 
     FragmentManager fragmentManager = getSupportFragmentManager();
     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-    DTGrid fragment = new DTGrid();
-    fragmentTransaction.add(R.id.gridviewcontainer, fragment);
-    fragmentTransaction.commit();
+    gridFragment = new DTGrid();
+    fragmentTransaction
+        .add(R.id.gridviewcontainer, gridFragment)
+        .commit();
   }
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     // Inflate the menu; this adds items to the action bar if it is present.
     getMenuInflater().inflate(R.menu.menu_main, menu);
+    swapView = menu.findItem(R.id.action_switch_view);
+    swapView.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+      @Override
+      public boolean onMenuItemClick(MenuItem item) {
+        swapDataTypeView();
+        return false;
+      }
+    });
     return true;
+  }
+
+  public void swapDataTypeView() {
+    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+    ft.setCustomAnimations(R.anim.right_slide_in, R.anim.right_slide_out);
+    if(gridFragment.isHidden()) {
+      ft.show(gridFragment);
+      swapView.setIcon(R.drawable.ic_view_list);
+      Log.d("gridFragment", "Shown");
+    } else {
+      ft.hide(gridFragment);
+      swapView.setIcon(R.drawable.ic_view_module);
+      Log.d("gridFragment", "Hidden");
+    }
+    ft.commit();
   }
 
   @Override

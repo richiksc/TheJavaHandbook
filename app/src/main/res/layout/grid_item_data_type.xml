@@ -12,8 +12,9 @@
         />
     <TextView
         android:layout_width="match_parent"
-        android:paddingLeft="@dimen/tile_margin"
-        android:paddingRight="@dimen/tile_margin"
+        android:paddingLeft="@dimen/label_margin"
+        android:paddingRight="@dimen/label_margin"
+        android:paddingBottom="@dimen/label_margin"
         android:layout_height="wrap_content"
         android:text="@string/type_name_ph"
         android:id="@+id/tvTypeNameGrid"
